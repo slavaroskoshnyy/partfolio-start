@@ -1,0 +1,161 @@
+// Подклячение файлов стилей страниц и элементов
+@import "ul.scss";
+// Подклячение файлов стилей страниц и элементов
+
+
+
+// Шрифты 
+@import url('https://fonts.googleapis.com/css2? family= Lato:ital,wght@0,400;0,700;1,400 & display=swap');
+// Шрифты 
+
+// Шрифт по умолчанию
+$fontfamily: "Times New Roman";
+// Шрифт по умолчанию
+
+// Переменные для блока
+$fz:100px;
+$color_1:#000;
+$color_2:#fff;
+// Переменные для блока
+
+// Файл обнуляющих стилей
+@import "nullstyle.scss";
+
+body{
+	margin:50px 0;
+	font-size:18px;
+	background-color: #e8e8e8;
+}
+.center{
+	text-align: center;
+}
+
+.decor{
+	text-align: center;
+	padding: 0 50px;
+	font-size: 28px;
+	font-style: italic;
+	font-weight: 900;
+}
+.content {
+	max-width: 600px;
+	height:100%;
+	margin: 0px auto;
+	line-height: 1.6;
+}
+.hello {
+
+}
+h1{
+
+}
+img{
+	margin: 25px 0;
+	height: 450px;
+	border-radius: 50%;
+}
+.titel {
+}
+ul{
+	background: url('../../img/li.svg') 0 9px no-repeat;
+}
+ul li{
+	&:before{
+		content:"";
+		height: 6px;
+		width: 6px;
+		background-color: red;
+		border-radius:50%;
+		padding: 0 0 0 18px;
+	}
+}
+
+.text {}
+a{
+		&:hover{
+		color: #FC7798;
+	}
+}
+.connection {
+	min-height: 700px;
+	&>p:before{
+		content:"";
+		padding: 0 0 0 25px;
+	}
+}
+
+.text p{
+	&:before{
+		content:"";
+		padding: 0 0 0 25px;
+	}
+}
+.connection>p{
+	&:before{
+		content:"";
+		padding: 0 0 0 25px;
+	}
+}
+h3{
+	margin: 25px 0;
+	text-decoration: underline;
+	font-style: oblique;
+}
+form{
+	width: 294px;
+	& p{
+		padding: 25px 0 10px 0;
+	}
+}
+input{
+	display: block;
+	padding: 30px;
+	width: 294px;
+	height: 30px;
+	border: 1px solid #b0b0b0;
+	border-radius: 6px;
+	&:focus{
+		border: 1px solid #7fbed5;
+		box-shadow: 0px 0px 20px -1px rgba(127,190,213,0.93);
+		}
+}
+textarea{
+	&:focus{
+		border: 1px solid #7fbed5;
+		box-shadow: 0px 0px 20px -1px rgba(127,190,213,0.93);
+		}
+	padding: 30px;
+	display: block;
+	height: 100px;
+	width: 294px;
+	border-radius: 6px;
+
+}
+button{
+	margin:25px 0 0 0;
+	display: block;
+	width: 294px;
+	height: 30px;
+	border-radius: 6px;
+	background: #80b7b3;
+	color: #fff;
+	letter-spacing: 0.1em;
+	box-shadow: 0px 6px 40px 0px rgba(128,183,179,0.54);
+	&:hover{
+		background-color: #3a5856;
+		box-shadow: 0px 6px 40px 0px rgba(128,183,179,0.54);
+	}
+		&:active{
+		background-color: #818181;
+	}
+}
+h5{
+	font-size: 28px;
+	font-style: italic;
+	text-decoration: underline;
+	margin:25px 0 0 0;
+}
+.networks a img{
+	margin-right: 10px;
+	height: 50px;
+}
